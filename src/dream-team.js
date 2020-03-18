@@ -1,5 +1,5 @@
 module.exports = function createDreamTeam(members) {
-  if (members === undefined || members === null) return false;
+  if (!(members instanceof Array)) return false;
   let result = [];
   for (member of members) {
     if (typeof member == 'string') {
