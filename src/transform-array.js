@@ -1,5 +1,4 @@
 module.exports = function transform(arr) {
-    console.log("GAVNO");
     if (!(arr instanceof Array)) { throw Error; }
     let result = [];
     for (let i = 0; i < arr.length; i++) {
